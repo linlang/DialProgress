@@ -46,7 +46,7 @@
         _selectedColor = selectedColor;
         _normalColor = normalColor;
         _progress = progress;
-//        _animation = animation;
+        //        _animation = animation;
         [self createProgressLayers];
         [self createCircleLineLayer];
         [self createElectricityLayer];
@@ -61,7 +61,7 @@
     _calibrationTotalNum = 80;
     _electricityBgColor = [UIColor colorWithWhite:1 alpha:0.5];
     _electricityColor = [UIColor greenColor];
-//    _electricityWidth = _calibrationWidth-4;
+    //    _electricityWidth = _calibrationWidth-4;
     //测试数据
     _electricityPercentage = 0.8;
 }
@@ -110,7 +110,14 @@
     self.selectedReplicationLayer.instanceDelay = 0.3;
     float angle = (360-_openAngle)/360.0*(M_PI*2)/(_calibrationTotalNum-1);
     self.selectedReplicationLayer.instanceTransform = CATransform3DMakeRotation(angle, 0, 0, 1);
-    
+}
+
+- (void)configProgressNormalColor {
+    self.calibrationNormalLayer.backgroundColor = _normalColor.CGColor;
+}
+
+- (void)configProgressSelectedColor {
+    self.calibrationLayer.backgroundColor = _selectedColor.CGColor;
 }
 
 //刻度条白色的线
@@ -141,7 +148,12 @@
     
     //电量背景
     UIBezierPath *bgPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CGRectGetWidth(self.bounds)*0.5, CGRectGetHeight(self.bounds) * 0.5) radius:radius startAngle:(beginAngel/180.0)*M_PI endAngle:(bgEndAngel/180.0)*M_PI clockwise:NO];
+    self.electricityBgLayer.lineWidth = _calibrationWidth-4;
     self.electricityBgLayer.path = bgPath.CGPath;
+}
+
+- (void)configElectricityBgColor {
+    self.electricityBgLayer.strokeColor = _electricityBgColor.CGColor;
 }
 
 - (void)configElectricityLayer {
@@ -154,7 +166,12 @@
     float beginAngel = 90+openAngle/2.0;
     float endAngel = beginAngel - openAngle*_electricityPercentage;
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CGRectGetWidth(self.bounds)*0.5, CGRectGetHeight(self.bounds) * 0.5) radius:radius startAngle:(beginAngel/180.0)*M_PI endAngle:(endAngel/180.0)*M_PI clockwise:NO];
+    self.electricityLayer.lineWidth = _calibrationWidth-4;
     self.electricityLayer.path = path.CGPath;
+}
+
+- (void)configElectricityColor {
+    self.electricityLayer.strokeColor = _electricityColor.CGColor;
 }
 
 - (void)configElectricityBoardLayer {
@@ -180,11 +197,11 @@
     
     [boardPath addLineToPoint:CGPointMake(cos(boardArcEndAngel/180.0*M_PI)*(_radius-_calibrationWidth)+centerPoint.x, sin(boardArcEndAngel/180.0*M_PI)*(_radius-_calibrationWidth)+centerPoint.y)];
     self.electricityBoardLayer.path = boardPath.CGPath;
-
+    
 }
 
 - (void)createElectricityLayer {
-
+    
     [self configElectricityBgLayer];
     [self configElectricityLayer];
     [self configElectricityBoardLayer];
@@ -291,13 +308,13 @@
 - (void)setSelectedColor:(UIColor *)selectedColor {
     _selectedColor = selectedColor;
     //刻度选中颜色 重新设置刻度选中颜色
-    [self configProgressSelectedLayer];
+    [self configProgressSelectedColor];
 }
 
 - (void)setNormalColor:(UIColor *)normalColor {
     _normalColor = normalColor;
     //刻度背景色 重新设置刻度背景色
-    [self configProgressNormalLayer];
+    [self configProgressNormalColor];
 }
 
 - (void)setProgress:(float)progress {
@@ -314,7 +331,7 @@
 
 - (void)setCalibrationWidth:(CGFloat)calibrationWidth {
     _calibrationWidth = calibrationWidth;
-     //刻度的宽度 重新画刻度背景跟选中 还有电量
+    //刻度的宽度 重新画刻度背景跟选中 还有电量
     [self configProgressNormalLayer];
     [self configProgressSelectedLayer];
     [self configCircleLineLayer];
@@ -332,14 +349,13 @@
 - (void)setElectricityBgColor:(UIColor *)electricityBgColor {
     _electricityBgColor = electricityBgColor;
     //电量背景色 重新绘制电量
-    [self configElectricityBgLayer];
-    
+    [self configElectricityBgColor];
 }
 
 - (void)setElectricityColor:(UIColor *)electricityColor {
     _electricityColor = electricityColor;
     //电量颜色 重新绘制电量
-    [self configElectricityLayer];
+    [self configElectricityColor];
 }
 
 - (void)setElectricityPercentage:(CGFloat)electricityPercentage {
@@ -353,12 +369,6 @@
     //电量百分比 设置电量
     [self configElectricityLayer];
 }
-
-//- (void)setAnimation:(BOOL)animation {
-//    _animation = animation;
-//    [self configProgressNormalLayer];
-//    [self configProgressSelectedLayer];
-//}
 
 
 

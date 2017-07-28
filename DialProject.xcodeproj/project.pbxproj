@@ -15,6 +15,7 @@
 		8913B4201F2ADEE100F596DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8913B41E1F2ADEE100F596DB /* LaunchScreen.storyboard */; };
 		8913B42B1F2ADEE100F596DB /* DialProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913B42A1F2ADEE100F596DB /* DialProjectTests.m */; };
 		8913B4361F2ADEE100F596DB /* DialProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913B4351F2ADEE100F596DB /* DialProjectUITests.m */; };
+		89D8AEE41F2B1453003310B2 /* DialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D8AEE31F2B1453003310B2 /* DialView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8913B4311F2ADEE100F596DB /* DialProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8913B4351F2ADEE100F596DB /* DialProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialProjectUITests.m; sourceTree = "<group>"; };
 		8913B4371F2ADEE100F596DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89D8AEE21F2B1453003310B2 /* DialView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialView.h; sourceTree = "<group>"; };
+		89D8AEE31F2B1453003310B2 /* DialView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		8913B40F1F2ADEE100F596DB /* DialProject */ = {
 			isa = PBXGroup;
 			children = (
+				89D8AEE21F2B1453003310B2 /* DialView.h */,
+				89D8AEE31F2B1453003310B2 /* DialView.m */,
 				8913B4131F2ADEE100F596DB /* AppDelegate.h */,
 				8913B4141F2ADEE100F596DB /* AppDelegate.m */,
 				8913B4161F2ADEE100F596DB /* ViewController.h */,
@@ -275,6 +280,7 @@
 			files = (
 				8913B4181F2ADEE100F596DB /* ViewController.m in Sources */,
 				8913B4151F2ADEE100F596DB /* AppDelegate.m in Sources */,
+				89D8AEE41F2B1453003310B2 /* DialView.m in Sources */,
 				8913B4121F2ADEE100F596DB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +515,7 @@
 				8913B43C1F2ADEE100F596DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8913B43D1F2ADEE100F596DB /* Build configuration list for PBXNativeTarget "DialProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +524,7 @@
 				8913B43F1F2ADEE100F596DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8913B4401F2ADEE100F596DB /* Build configuration list for PBXNativeTarget "DialProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +533,7 @@
 				8913B4421F2ADEE100F596DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
