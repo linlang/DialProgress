@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8913B4121F2ADEE100F596DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913B4111F2ADEE100F596DB /* main.m */; };
+		8913B4151F2ADEE100F596DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913B4141F2ADEE100F596DB /* AppDelegate.m */; };
+		8913B4181F2ADEE100F596DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913B4171F2ADEE100F596DB /* ViewController.m */; };
+		8913B41B1F2ADEE100F596DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8913B4191F2ADEE100F596DB /* Main.storyboard */; };
+		8913B41D1F2ADEE100F596DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8913B41C1F2ADEE100F596DB /* Assets.xcassets */; };
+		8913B4201F2ADEE100F596DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8913B41E1F2ADEE100F596DB /* LaunchScreen.storyboard */; };
+		8913B42B1F2ADEE100F596DB /* DialProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913B42A1F2ADEE100F596DB /* DialProjectTests.m */; };
+		8913B4361F2ADEE100F596DB /* DialProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8913B4351F2ADEE100F596DB /* DialProjectUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8913B4271F2ADEE100F596DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8913B4051F2ADEE100F596DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8913B40C1F2ADEE100F596DB;
+			remoteInfo = DialProject;
+		};
+		8913B4321F2ADEE100F596DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8913B4051F2ADEE100F596DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8913B40C1F2ADEE100F596DB;
+			remoteInfo = DialProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8913B40D1F2ADEE100F596DB /* DialProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DialProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8913B4111F2ADEE100F596DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8913B4131F2ADEE100F596DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8913B4141F2ADEE100F596DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8913B4161F2ADEE100F596DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8913B4171F2ADEE100F596DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8913B41A1F2ADEE100F596DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8913B41C1F2ADEE100F596DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8913B41F1F2ADEE100F596DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8913B4211F2ADEE100F596DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8913B4261F2ADEE100F596DB /* DialProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8913B42A1F2ADEE100F596DB /* DialProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialProjectTests.m; sourceTree = "<group>"; };
+		8913B42C1F2ADEE100F596DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8913B4311F2ADEE100F596DB /* DialProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DialProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8913B4351F2ADEE100F596DB /* DialProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DialProjectUITests.m; sourceTree = "<group>"; };
+		8913B4371F2ADEE100F596DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8913B40A1F2ADEE100F596DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8913B4231F2ADEE100F596DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8913B42E1F2ADEE100F596DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8913B4041F2ADEE100F596DB = {
+			isa = PBXGroup;
+			children = (
+				8913B40F1F2ADEE100F596DB /* DialProject */,
+				8913B4291F2ADEE100F596DB /* DialProjectTests */,
+				8913B4341F2ADEE100F596DB /* DialProjectUITests */,
+				8913B40E1F2ADEE100F596DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8913B40E1F2ADEE100F596DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8913B40D1F2ADEE100F596DB /* DialProject.app */,
+				8913B4261F2ADEE100F596DB /* DialProjectTests.xctest */,
+				8913B4311F2ADEE100F596DB /* DialProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8913B40F1F2ADEE100F596DB /* DialProject */ = {
+			isa = PBXGroup;
+			children = (
+				8913B4131F2ADEE100F596DB /* AppDelegate.h */,
+				8913B4141F2ADEE100F596DB /* AppDelegate.m */,
+				8913B4161F2ADEE100F596DB /* ViewController.h */,
+				8913B4171F2ADEE100F596DB /* ViewController.m */,
+				8913B4191F2ADEE100F596DB /* Main.storyboard */,
+				8913B41C1F2ADEE100F596DB /* Assets.xcassets */,
+				8913B41E1F2ADEE100F596DB /* LaunchScreen.storyboard */,
+				8913B4211F2ADEE100F596DB /* Info.plist */,
+				8913B4101F2ADEE100F596DB /* Supporting Files */,
+			);
+			path = DialProject;
+			sourceTree = "<group>";
+		};
+		8913B4101F2ADEE100F596DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8913B4111F2ADEE100F596DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8913B4291F2ADEE100F596DB /* DialProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				8913B42A1F2ADEE100F596DB /* DialProjectTests.m */,
+				8913B42C1F2ADEE100F596DB /* Info.plist */,
+			);
+			path = DialProjectTests;
+			sourceTree = "<group>";
+		};
+		8913B4341F2ADEE100F596DB /* DialProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8913B4351F2ADEE100F596DB /* DialProjectUITests.m */,
+				8913B4371F2ADEE100F596DB /* Info.plist */,
+			);
+			path = DialProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8913B40C1F2ADEE100F596DB /* DialProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8913B43A1F2ADEE100F596DB /* Build configuration list for PBXNativeTarget "DialProject" */;
+			buildPhases = (
+				8913B4091F2ADEE100F596DB /* Sources */,
+				8913B40A1F2ADEE100F596DB /* Frameworks */,
+				8913B40B1F2ADEE100F596DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DialProject;
+			productName = DialProject;
+			productReference = 8913B40D1F2ADEE100F596DB /* DialProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8913B4251F2ADEE100F596DB /* DialProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8913B43D1F2ADEE100F596DB /* Build configuration list for PBXNativeTarget "DialProjectTests" */;
+			buildPhases = (
+				8913B4221F2ADEE100F596DB /* Sources */,
+				8913B4231F2ADEE100F596DB /* Frameworks */,
+				8913B4241F2ADEE100F596DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8913B4281F2ADEE100F596DB /* PBXTargetDependency */,
+			);
+			name = DialProjectTests;
+			productName = DialProjectTests;
+			productReference = 8913B4261F2ADEE100F596DB /* DialProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8913B4301F2ADEE100F596DB /* DialProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8913B4401F2ADEE100F596DB /* Build configuration list for PBXNativeTarget "DialProjectUITests" */;
+			buildPhases = (
+				8913B42D1F2ADEE100F596DB /* Sources */,
+				8913B42E1F2ADEE100F596DB /* Frameworks */,
+				8913B42F1F2ADEE100F596DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8913B4331F2ADEE100F596DB /* PBXTargetDependency */,
+			);
+			name = DialProjectUITests;
+			productName = DialProjectUITests;
+			productReference = 8913B4311F2ADEE100F596DB /* DialProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8913B4051F2ADEE100F596DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Linyoung;
+				TargetAttributes = {
+					8913B40C1F2ADEE100F596DB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					8913B4251F2ADEE100F596DB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8913B40C1F2ADEE100F596DB;
+					};
+					8913B4301F2ADEE100F596DB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8913B40C1F2ADEE100F596DB;
+					};
+				};
+			};
+			buildConfigurationList = 8913B4081F2ADEE100F596DB /* Build configuration list for PBXProject "DialProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8913B4041F2ADEE100F596DB;
+			productRefGroup = 8913B40E1F2ADEE100F596DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8913B40C1F2ADEE100F596DB /* DialProject */,
+				8913B4251F2ADEE100F596DB /* DialProjectTests */,
+				8913B4301F2ADEE100F596DB /* DialProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8913B40B1F2ADEE100F596DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8913B4201F2ADEE100F596DB /* LaunchScreen.storyboard in Resources */,
+				8913B41D1F2ADEE100F596DB /* Assets.xcassets in Resources */,
+				8913B41B1F2ADEE100F596DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8913B4241F2ADEE100F596DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8913B42F1F2ADEE100F596DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8913B4091F2ADEE100F596DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8913B4181F2ADEE100F596DB /* ViewController.m in Sources */,
+				8913B4151F2ADEE100F596DB /* AppDelegate.m in Sources */,
+				8913B4121F2ADEE100F596DB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8913B4221F2ADEE100F596DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8913B42B1F2ADEE100F596DB /* DialProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8913B42D1F2ADEE100F596DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8913B4361F2ADEE100F596DB /* DialProjectUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8913B4281F2ADEE100F596DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8913B40C1F2ADEE100F596DB /* DialProject */;
+			targetProxy = 8913B4271F2ADEE100F596DB /* PBXContainerItemProxy */;
+		};
+		8913B4331F2ADEE100F596DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8913B40C1F2ADEE100F596DB /* DialProject */;
+			targetProxy = 8913B4321F2ADEE100F596DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8913B4191F2ADEE100F596DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8913B41A1F2ADEE100F596DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8913B41E1F2ADEE100F596DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8913B41F1F2ADEE100F596DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8913B4381F2ADEE100F596DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8913B4391F2ADEE100F596DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8913B43B1F2ADEE100F596DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DialProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Linyoung.DialProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8913B43C1F2ADEE100F596DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DialProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Linyoung.DialProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8913B43E1F2ADEE100F596DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DialProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Linyoung.DialProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DialProject.app/DialProject";
+			};
+			name = Debug;
+		};
+		8913B43F1F2ADEE100F596DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DialProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Linyoung.DialProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DialProject.app/DialProject";
+			};
+			name = Release;
+		};
+		8913B4411F2ADEE100F596DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DialProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Linyoung.DialProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DialProject;
+			};
+			name = Debug;
+		};
+		8913B4421F2ADEE100F596DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DialProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Linyoung.DialProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DialProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8913B4081F2ADEE100F596DB /* Build configuration list for PBXProject "DialProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8913B4381F2ADEE100F596DB /* Debug */,
+				8913B4391F2ADEE100F596DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8913B43A1F2ADEE100F596DB /* Build configuration list for PBXNativeTarget "DialProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8913B43B1F2ADEE100F596DB /* Debug */,
+				8913B43C1F2ADEE100F596DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8913B43D1F2ADEE100F596DB /* Build configuration list for PBXNativeTarget "DialProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8913B43E1F2ADEE100F596DB /* Debug */,
+				8913B43F1F2ADEE100F596DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8913B4401F2ADEE100F596DB /* Build configuration list for PBXNativeTarget "DialProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8913B4411F2ADEE100F596DB /* Debug */,
+				8913B4421F2ADEE100F596DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8913B4051F2ADEE100F596DB /* Project object */;
+}
